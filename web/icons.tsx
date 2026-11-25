@@ -1,0 +1,14 @@
+const PATHS = {
+  "chart-bar": "M16 4H20V20H16ZM10 8H14V20H10ZM4 12H8V20H4ZM2 20H22V22H2Z",
+  list: "M2 2H6V4H2ZM2 8H6V10H2ZM2 14H6V16H2ZM2 20H6V22H2ZM8 2H22V4H8ZM8 8H22V10H8ZM8 14H22V16H8ZM8 20H22V22H8Z",
+  book: "M2 4H10V6H2ZM14 4H22V6H14ZM2 6H4V16H2ZM10 6H14V16H10ZM20 6H22V16H20ZM2 16H10V18H2ZM14 16H22V18H14ZM10 18H14V20H10Z",
+  "external-link": "M12 2H22V4H12ZM18 4H22V6H18ZM2 6H10V8H2ZM16 6H18V8H16ZM20 6H22V12H20ZM2 8H4V20H2ZM14 8H16V10H14ZM12 10H14V12H12ZM10 12H12V14H10ZM8 14H10V16H8ZM16 14H18V20H16ZM2 20H18V22H2Z",
+};
+
+export function Icon({ name, size = 24, className }: { name: keyof typeof PATHS; size?: number; className?: string }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" shapeRendering="crispEdges" aria-hidden className={className} style={{ flexShrink: 0 }}>
+      <path fill="currentColor" d={PATHS[name]} />
+    </svg>
+  );
+}
