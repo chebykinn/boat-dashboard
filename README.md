@@ -1,5 +1,7 @@
 # boat-dashboard
 
+![The dashboard's overview: boxes, vCPU, RAM and spend, the plan's limits, and the boxes-running and starts-per-hour charts](docs/screenshot.png)
+
 A live dashboard of a [Boat](https://boat.dev) account's sandboxes. It shows over up to 7 days:
 
 - boxes running
